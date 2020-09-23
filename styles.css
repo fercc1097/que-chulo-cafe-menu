@@ -1,0 +1,60 @@
+body {
+}
+
+.marco {
+  display: grid;
+  background-color: #0b332a;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 120px 1fr 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('assets/images/marco.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-self: end;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+header img {
+  height: 70px;
+}
+
+main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  color: wheat;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: wheat;
+}
+
+ul {
+  list-style: none;
+  color: wheat;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
