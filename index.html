@@ -10,14 +10,14 @@
     <div class="marco">
       <header>
         <img
-          src="/assets/images/logo-horizontal.png"
+          src="assets/images/logo-horizontal-blanco-img.png"
           alt="logo de que chulo café"
         />
       </header>
       <main>
         <h1 class="title">- Menú -</h1>
-        <div class="content">
-          <h2 class="subtitle">Bebidas calientes</h2>
+        <button class="accordion">Bebidas Calientes</button>
+        <div class="panel">
           <ul>
             <li>
               <p class="item">Café Americano</p>
@@ -40,12 +40,347 @@
               <p class="price">$30</p>
             </li>
             <li>
-              <p class="item">Capuchino</p>
-              <p class="price">$30</p>
+              <div class="multi-price">
+                <p class="item">Capuchino</p>
+                <div class="prices">
+                  <p class="price">chico: $30</p>
+                  <p class="price">grande: $30</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="multi-price">
+                <p class="item">Capuchino con sabores</p>
+                <p class="item-description">
+                  (Caramel, crema irlandesa, chocolate, vainilla)
+                </p>
+                <div class="prices">
+                  <p class="price">chico: $35</p>
+                  <p class="price">grande: $42</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="item">Café Latte</p>
+              <p class="price">$50</p>
+            </li>
+            <li>
+              <p class="item">Chai</p>
+              <p class="price">$50</p>
+            </li>
+            <li>
+              <p class="item">Chocolate caliente <nobr>con malvavisco</nobr></p>
+              <p class="price">$38</p>
+            </li>
+            <li>
+              <p class="item">Tisanas (Diferentes sabores)</p>
+              <p class="price">$50</p>
+            </li>
+            <li>
+              <p class="item">Té (Diferentes sabores)</p>
+              <p class="price">$25</p>
+            </li>
+            <li>
+              <p class="item">Matcha</p>
+              <p class="price">$50</p>
+            </li>
+            <li>
+              <p class="item">Taro</p>
+              <p class="price">$50</p>
             </li>
           </ul>
         </div>
+
+        <button class="accordion">Bebidas Frías</button>
+        <div class="panel">
+          <ul>
+            <li>
+              <p class="item">Capuchino Frío</p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">Café Helado</p>
+              <p class="price">$30</p>
+            </li>
+            <li>
+              <p class="item">Capuchino Frappe</p>
+              <p class="price">$48</p>
+            </li>
+            <li>
+              <p class="item">Capuchino Macchiato</p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">Oreo Frappuccino</p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">Caramel Frappuhcino</p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">Caramel Moka</p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">Frappuchino</p>
+              <p class="price">$48</p>
+            </li>
+            <li>
+              <p class="item">Té Verde Frappe</p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">
+                Tisanas Frías
+                <span class="item-description"> (Diferentes Sabores) </span>
+              </p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">
+                Frappuchinos de Frutas
+                <span class="item-description">
+                  (Maracuya, Zarzamora, Jamacia, De Temporada)
+                </span>
+              </p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p class="item">Tamarindo Frappe</p>
+              <p class="price">$40</p>
+            </li>
+            <li>
+              <p class="item">
+                Malteadas
+                <span class="item-description">
+                  (Fresa, Chocolate, Vainilla)
+                </span>
+              </p>
+              <p class="price">$40</p>
+            </li>
+            <li>
+              <p class="item">
+                Soda Italiana
+                <span class="item-description"> (Difernetes Sabores) </span>
+              </p>
+              <p class="price">$38</p>
+            </li>
+            <li>
+              <p class="item">Refrescos</p>
+              <p class="price">$20</p>
+            </li>
+            <li>
+              <p class="item">Agua</p>
+              <p class="price">$20</p>
+            </li>
+            <li>
+              <p class="item">
+                Smoothies
+                <span class="item-description"> (Difernetes Sabores) </span>
+              </p>
+              <p class="price">$48</p>
+            </li>
+            <li>
+              <p class="item">Chai Frappe</p>
+              <p class="price">$48</p>
+            </li>
+            <li>
+              <p class="item">Chocomilk</p>
+              <p class="price">$40</p>
+            </li>
+            <li>
+              <p class="item">Taro</p>
+              <p class="price">$50</p>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">Salados</button>
+        <div class="panel">
+          <ul>
+            <li>
+              <div class="item">
+                <p class="item">Baguette</p>
+                <small class="item-description">
+                  (Cochinita pibil, 3 quesos(manchego, oaxaca y queso crema)
+                  Italiano,jamón)
+                </small>
+              </div>
+              <p class="price">$65</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Crepas</p>
+                <small class="item-description">
+                  (Jamón con queso, cochinita pibil, italiana, hawaiana,
+                  salchicha con chipotle, rajas poblanas, mole con pollo)
+                </small>
+              </div>
+              <p class="price">$55</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Cuernitos con jamón</p>
+              </div>
+              <p class="price">$40</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Bagel con jamón y queso</p>
+              </div>
+              <p class="price">$40</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Ensalada de la casa</p>
+              </div>
+              <p class="price">$55</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Molletes</p>
+              </div>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Molletes con jamón</p>
+              </div>
+              <p class="price">$48</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Sandwich</p>
+                <small class="item-description">
+                  (Jamón y queso, 3 quesos, vegetariano, pollo, pollo con
+                  chiltepín )
+                </small>
+              </div>
+              <p class="price">$50</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Club Sandwich</p>
+              </div>
+              <p class="price">$55</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Sandwichito</p>
+              </div>
+              <p class="price">$55</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Dorilikos</p>
+              </div>
+              <p class="price">$35</p>
+            </li>
+          </ul>
+        </div>
+        <button class="accordion">Dulces</button>
+        <div class="panel">
+          <ul>
+            <li>
+              <div class="item">
+                <p class="item">Pastel de Chocolate</p>
+              </div>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Pay de Manzana</p>
+              </div>
+              <p class="price">$49</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Pastel de vainilla</p>
+              </div>
+              <p class="price">$49</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Pay de Queso</p>
+              </div>
+              <p class="price">$40</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Pay de Queso con Zarzamora</p>
+              </div>
+              <p class="price">$40</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Pay Helado de Maracuyá</p>
+              </div>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Bagle con mermelada</p>
+                <small class="item-description">
+                  (Maracuya, Zarzamora, Guayaba, Fresa, etc...)
+                </small>
+              </div>
+              <p class="price">$35</p>
+            </li>
+            <li>
+              <div class="item">
+                <p class="item">Crepa</p>
+                <small class="item-description">
+                  (Nutella con: fresa | platano | cajeta | rompope |
+                  Philadelphia con manzana | zarzamora | guayaba | maracuyá|
+                  <br />
+                  Queso holandés con lechera, Mantequilla con miel de abeja.)
+                </small>
+              </div>
+              <p class="price">$50</p>
+            </li>
+            <div class="item">
+              <p class="item">Topping extra por ingrediente</p>
+              <small class="item-description">
+                (Bombom, frutilupis, chococrispis, zucaritas, coco, durazno,
+                piña, bombon, gomitas, cerezas, pasitas con chocolate,
+                chochitos, amaranto, granola. )
+              </small>
+            </div>
+            <p class="price">$5</p>
+          </li>
+          <li>
+            <div class="item">
+              <p class="item">Helado</p>
+              <small class="item-description">
+                (Limón, Vainilla, Chocolate, Fresa)
+              </small>
+            </div>
+            <p class="price">$30</p>
+          </li>
+          <li>
+          <li>
+            <div class="item">
+              <p class="item">Yogurt con granola, miel de abeja y fruta de temporada</p>
+            </div>
+            <p class="price">$35</p>
+          </li>
+          <li>
+            <div class="item">
+              <p class="item">Galletas</p>
+            </div>
+            <p class="price">$20</p>
+          </li>
+          <li>
+            <div class="item">
+              <p class="item">Carlota de limón</p>
+            </div>
+            <p class="price">$30</p>
+          </li>
+        </ul>
+      </div>
       </main>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

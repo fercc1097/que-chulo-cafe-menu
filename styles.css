@@ -1,12 +1,17 @@
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 .marco {
   display: grid;
   background-color: #0b332a;
   grid-template-columns: 50px 1fr 50px;
-  grid-template-rows: 120px 1fr 100px;
-  position: absolute;
+  grid-template-rows: 150px 1fr 100px;
+  position: relative;
+  min-height: 100vh;
   top: 0;
   bottom: 0;
   left: 0;
@@ -34,8 +39,9 @@ main {
   grid-row: 2/3;
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  overflow: scroll;
 }
 
 .title {
@@ -45,6 +51,7 @@ main {
 
 .subtitle {
   color: wheat;
+  transition: 0.4s;
 }
 
 ul {
@@ -57,4 +64,69 @@ ul {
 li {
   display: flex;
   justify-content: space-between;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: transparent;
+  /* border: 2px solid #dbbb57; */
+  /* outline: 1px solid #000; */
+  border: 1px solid dbbb57;
+  outline-style: solid;
+  outline-color: #dbbb57;
+  outline-width: medium;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  /* outline: none; */
+  transition: 0.4s;
+  margin: 10px 0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: transparent;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: 0b332a;
+  max-height: 0;
+  width: 90%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  color: #dbbb57;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '-'; /* Unicode character for "minus" sign (-) */
+}
+
+.multi-price {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.prices {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  max-width: 85%;
 }
