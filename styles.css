@@ -44,6 +44,9 @@ body {
   background-image: url('assets/images/laterales.png');
   background-repeat: round;
   background-size: contain;
+  margin-left: -1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 @media (min-width: 468px) {
   .body {
