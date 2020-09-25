@@ -162,6 +162,22 @@ li {
   color: #dbbb57;
   float: right;
   margin-left: 5px;
+  /* animation-name: pulse; */
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  transform: scale(1.5);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .active:after {
