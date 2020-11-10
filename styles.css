@@ -8,7 +8,7 @@ body {
 .marco {
   display: grid;
   background-color: #0b332a;
-  grid-template-columns: 50px 1fr 50px;
+  grid-template-columns: 30px 1fr 30px;
   grid-template-rows: 150px 1fr 100px;
   position: relative;
   min-height: 100vh;
@@ -97,7 +97,7 @@ main {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 42px;
+  margin: 42px 18px;
 }
 
 .title {
@@ -136,7 +136,7 @@ li {
   cursor: pointer;
   font-size: 20px;
   padding: 18px;
-  width: 97%;
+  width: 94%;
   text-align: left;
   border: none;
   /* outline: none; */
@@ -205,6 +205,12 @@ li {
 .item {
   max-width: 85%;
   width: 130px;
+}
+
+.footer--title {
+  color: wheat;
+  font-size: 22px;
+  text-align: center;
 }
 
 .social {
